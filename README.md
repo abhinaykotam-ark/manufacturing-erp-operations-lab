@@ -72,3 +72,28 @@ Original starter-kit components are distinguished from project additions where a
 ## Scope and Limitations
 
 This is an independent local portfolio lab, not a production enterprise deployment. Quality inspections were simulated, recovery testing used an isolated database, and scheduled monitoring was validated through its initial execution. The project does not represent professional administration of Flex, Baan, or Infor LN systems.
+## View Project Implementation and Evidence
+
+### ERP Business Workflows
+- [Purchase Order and Partial Receiving](screenshots/01_purchase_order.png)
+- [Completed Manufacturing Order](screenshots/02_manufacturing_order.png)
+- [Quality Hold and Inspection Record](screenshots/03_quality_hold.png)
+- [Quality Release Transfer](screenshots/04_quality_release.png)
+
+### SQL and Python Implementation
+- [PostgreSQL Inventory Reconciliation](sql/inventory_reconciliation.sql)
+- [Python ERP Health Monitoring](scripts/monitor.py)
+- [Python Operations Checker](scripts/ops_check.py)
+
+### Incident, Quality and Change Management
+- [INC-001 — Simulated Outage and Recovery](INC-001.md)
+- [CHG-001 — Monitoring Enhancement and Rollback Rehearsal](CHG-001.md)
+- [QC-001 — Quality Segregation and Release](QC-001.md)
+
+### Monitoring Test Results
+- [HTTP Availability and Recovery](evidence/health_log.csv)
+- [Operational Checks and Stock Reconciliation](evidence/ops_checks.csv)
+- [Monitoring Change Test](evidence/CHG001_test.csv)
+- [Original Script Validation](evidence/CHG001_rollback_test.csv)
+
+**Environment:** Local Odoo 19 Community and PostgreSQL 16. All incidents, inspections and recovery exercises were performed in a controlled training environment.
